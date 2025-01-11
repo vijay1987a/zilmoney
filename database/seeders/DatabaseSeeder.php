@@ -1,0 +1,32 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Languages;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     */
+    public function run(): void
+    {
+        // User::factory(10)->create();
+
+        Languages::insert(
+		[
+            'language' => 'Tamil'
+        ]);
+		Languages::insert(
+		[
+            'language' => 'Malayalam'
+        ]);
+		Languages::insert(
+		[
+            'language' => 'Hindi'
+        ]
+		);
+    }
+}
